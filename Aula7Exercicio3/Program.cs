@@ -36,7 +36,7 @@ namespace Aula7Exercicio3
         private static void Iterator<T, U>(Par<T, U>[] array)
         {
             foreach (var item in array)
-                Console.WriteLine(item);
+                Console.WriteLine(item);                      
         }
 
         //Trocando os valores das propriedades
