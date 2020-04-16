@@ -1,6 +1,6 @@
 ﻿namespace AgendaADONET
 {
-    partial class Form1
+    partial class frmAgenda
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,13 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dgvAgenda = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAgenda)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvAgenda
+            // 
+            this.dgvAgenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAgenda.Location = new System.Drawing.Point(12, 12);
+            this.dgvAgenda.Name = "dgvAgenda";
+            this.dgvAgenda.ReadOnly = true;
+            this.dgvAgenda.Size = new System.Drawing.Size(776, 150);
+            this.dgvAgenda.TabIndex = 0;
+            // 
+            // frmAgenda
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.dgvAgenda);
+            this.Name = "frmAgenda";
+            this.Text = "Agenda";
+            this.Load += new System.EventHandler(this.frmAgenda_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAgenda)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvAgenda;
     }
 }
 
